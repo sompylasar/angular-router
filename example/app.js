@@ -24,7 +24,7 @@ angular.module('app', ['state'])
         $state.contentTmpl = 'index.html';
       });
 
-      this.action('didSelectCampaign', function(id) {
+      this.event('didSelectCampaign', function(id) {
         this.goto('/show', {context: id});
       });
     });
@@ -54,7 +54,7 @@ angular.module('app', ['state'])
           });
         }, this);
 
-        this.action('didSelectFilter', function(filter) {
+        this.event('didSelectFilter', function(filter) {
           this.replace(); this.goto(filter);
         });
       });
@@ -73,7 +73,7 @@ angular.module('app', ['state'])
           });
         }, this);
 
-        this.action('didSelectMetric', function(metric) {
+        this.event('didSelectMetric', function(metric) {
           this.replace(); this.goto(metric);
         });
       });
@@ -87,7 +87,7 @@ angular.module('app', ['state'])
             $state.showCampaignModal = false;
           });
 
-          this.action('didToggleModal', function() {
+          this.event('didToggleModal', function() {
             this.replace(); this.goto('../on');
           });
         });
@@ -98,7 +98,7 @@ angular.module('app', ['state'])
             $state.showCampaignModal = true;
           });
 
-          this.action('didToggleModal', function() {
+          this.event('didToggleModal', function() {
             this.replace(); this.goto('../off');
           });
         });
