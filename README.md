@@ -14,8 +14,7 @@ One particular feature worth mentioning is that the approach to routing used her
 
 ## Run Specs
 
-    $ npm install -g karma # if not already installed
-    $ karma start
+    $ ./node_modules/karma/bin/karma start
 
 ## Example App
 

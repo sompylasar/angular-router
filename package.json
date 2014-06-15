@@ -1,20 +1,24 @@
 {
-  "name": "router",
+  "name": "angular-router",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/burrows/angular-router.git"
+  },
   "dependencies": {
     "statechart": "git://github.com/burrows/statechart.js.git#master"
   },
   "devDependencies": {
     "first": "0.0.3",
-    "karma-script-launcher": "~0.1.0",
-    "karma-firefox-launcher": "~0.1.0",
-    "karma-chrome-launcher": "~0.1.0",
-    "karma-html2js-preprocessor": "~0.1.0",
-    "karma-jasmine": "~0.1.3",
-    "karma-requirejs": "~0.1.0",
-    "karma-coffee-preprocessor": "~0.1.0",
-    "karma-phantomjs-launcher": "~0.1.0",
-    "karma": "~0.10.2",
-    "karma-safari-launcher": "~0.1.1"
+    "karma": "^0.12.9",
+    "karma-script-launcher": "^0.1.0",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-html2js-preprocessor": "^0.1.0",
+    "karma-jasmine": "^0.1.5",
+    "karma-requirejs": "^0.2.0",
+    "karma-coffee-preprocessor": "^0.2.1",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-safari-launcher": "^0.1.1"
   }
 }
